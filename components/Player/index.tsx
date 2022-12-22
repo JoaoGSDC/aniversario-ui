@@ -5,7 +5,7 @@ export const Player = () => {
   const [mute, setMute] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setMute(false), 500);
+    setTimeout(() => setMute(false), 3000);
     setTimeout(() => setMute(true), 34000);
   }, []);
 
