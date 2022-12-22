@@ -10,7 +10,7 @@ export const Player = () => {
 
   return (
     <VideoContainer>
-      <Video loop muted={mute} autoPlay>
+      <Video loop muted={true} autoPlay>
         <source src="/Videos/masha-aniversario.mp4" type="video/mp4" />
       </Video>
     </VideoContainer>
