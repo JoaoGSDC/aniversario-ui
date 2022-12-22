@@ -17,11 +17,13 @@ import {
   MainText,
   MashaImage,
   MenuButton,
+  PlayerButton,
 } from '../styles/Home';
 
 export default function Home() {
   const [giftsList, setGiftList] = useState(false);
   const [localization, setLocalization] = useState(false);
+  const [isPlayed, setIsPlayed] = useState(false);
 
   const [openInfos, setOpenInfos] = useState(false);
 
@@ -39,7 +41,19 @@ export default function Home() {
         ) : null}
 
         <InformationsContent backgroundColor={giftsList || localization ? '#f1f3f4' : 'transparent'}>
-          {!giftsList && !localization ? (
+          {!isPlayed ? (
+            <>
+              <PlayerButton
+                onClick={() => {
+                  setIsPlayed(true);
+                  document.querySelector('video')?.play();
+                }}
+              >
+                ▶
+              </PlayerButton>
+            </>
+          ) : null}
+          {!(giftsList && localization) && isPlayed ? (
             <MainText left={giftsList || localization ? '-1100px' : '64px'}>
               <h3>É aniversário da</h3>
               <h1>Violetta!</h1>

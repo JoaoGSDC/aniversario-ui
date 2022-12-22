@@ -251,3 +251,23 @@ export const MenuButton = styled(CloseButton)`
   background-color: transparent;
   font-size: 2rem;
 `;
+
+export const PlayerButton = styled.button`
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: transparent;
+  color: #ffffff9e;
+  font-size: 100px;
+  border: none;
+  transition: 0.2s;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+    font-size: 80px;
+  }
+`;

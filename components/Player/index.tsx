@@ -9,8 +9,8 @@ export const Player = () => {
   }, []);
 
   return (
-    <VideoContainer onClick={() => document.querySelector('video')?.play()}>
-      <Video autoPlay loop muted={mute}>
+    <VideoContainer>
+      <Video loop muted={mute}>
         <source src="/Videos/masha-aniversario.mp4" type="video/mp4" />
       </Video>
     </VideoContainer>
