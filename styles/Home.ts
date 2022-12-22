@@ -131,8 +131,8 @@ export const MashaImage = styled.figure`
   }
 
   @media (max-width: 600px) {
-    width: 304px;
-    bottom: -20%;
+    width: 65%;
+    bottom: -16%;
     left: 0;
     right: 0;
     margin: auto;
