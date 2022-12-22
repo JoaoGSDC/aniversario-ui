@@ -8,9 +8,14 @@ export const Player = () => {
     setTimeout(() => setMute(true), 34000);
   }, []);
 
+  useEffect(() => {
+    const video = document.querySelector('video');
+    video?.play();
+  }, []);
+
   return (
     <VideoContainer>
-      <Video autoPlay loop muted={mute} playsInline>
+      <Video autoPlay loop>
         <source src="/Videos/masha-aniversario.mp4" type="video/mp4" />
       </Video>
     </VideoContainer>
