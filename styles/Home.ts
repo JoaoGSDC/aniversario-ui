@@ -70,6 +70,10 @@ export const MainText = styled.div.attrs((props: { left: string }) => props)`
       max-width: 100%;
     }
   }
+
+  @media (max-height: 700px) {
+    top: 24px;
+  }
 `;
 
 export const BirthdayPersonContent = styled.div.attrs((props: { open: boolean }) => props)`
@@ -136,6 +140,10 @@ export const MashaImage = styled.figure`
     left: 0;
     right: 0;
     margin: auto;
+  }
+
+  @media (max-height: 700px) {
+    bottom: -25%;
   }
 `;
 
