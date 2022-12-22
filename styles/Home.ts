@@ -270,4 +270,8 @@ export const PlayerButton = styled.button`
     cursor: pointer;
     font-size: 80px;
   }
+
+  @media (max-width: 600px) {
+    top: 25%;
+  }
 `;
