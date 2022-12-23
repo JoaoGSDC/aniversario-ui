@@ -128,7 +128,7 @@ export default function Home() {
         </BirthdayPersonContent>
       </Container>
 
-      <Player />
+      <Player play={isPlayed} />
     </>
   );
 }

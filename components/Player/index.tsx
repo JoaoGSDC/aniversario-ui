@@ -1,12 +1,16 @@
 import { useEffect, useState } from 'react';
 import { Video, VideoContainer } from './style';
 
-export const Player = () => {
+export const Player = ({ play }: any) => {
   const [mute, setMute] = useState(false);
 
   useEffect(() => {
+    if (!play) {
+      return;
+    }
+
     setTimeout(() => setMute(true), 34000);
-  }, []);
+  }, [play]);
 
   return (
     <VideoContainer>
