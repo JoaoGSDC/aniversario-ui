@@ -89,7 +89,9 @@ export default function Home() {
                 <ButtonPrimary
                   backgroundColor="#c52a93"
                   onClick={() => {
-                    window.location = 'geo:-22.5707054,-47.4207229' as any;
+                    // window.location = 'geo:-22.5707054,-47.4207229' as any;
+                    const url = `https://www.google.com/maps/place/R.+Augusto+Sagioro,+230+-+Parque+Res.+Sthalberg,+Limeira+-+SP,+13482-290/@-22.5708522,-47.4206654,17z`;
+                    window.open(url, '_blank');
                   }}
                 >
                   Abrir GPS
