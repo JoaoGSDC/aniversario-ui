@@ -89,7 +89,7 @@ export const BirthdayPersonContent = styled.div.attrs((props: { open: boolean })
   position: sticky;
   right: 0px;
 
-  transition: 0.4s;
+  transition: 0.2s;
 
   hr {
     width: 80%;
@@ -121,7 +121,7 @@ export const BirthdayPersonContent = styled.div.attrs((props: { open: boolean })
   }
 `;
 
-export const MashaImage = styled.figure`
+export const MashaImage = styled.figure.attrs((props: { open: boolean }) => props)`
   margin: 0px;
   padding: 0px;
   position: absolute;
@@ -137,13 +137,19 @@ export const MashaImage = styled.figure`
   @media (max-width: 600px) {
     width: 65%;
     bottom: -16%;
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: 0px;
     margin: auto;
+
+    transition: 0.2s;
   }
 
   @media (max-height: 700px) {
     bottom: -25%;
+  }
+
+  @media (max-width: 600px) and (max-height: 800px) {
+    left: ${(props) => (!props.open ? '0px' : '-185px')};
   }
 `;
 

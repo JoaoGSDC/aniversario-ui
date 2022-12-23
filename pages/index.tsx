@@ -35,7 +35,7 @@ export default function Home() {
         </nav>
 
         {!(giftsList || localization) ? (
-          <MashaImage>
+          <MashaImage open={openInfos}>
             <img src="/Images/Masha.png" alt="masha" />
           </MashaImage>
         ) : null}
