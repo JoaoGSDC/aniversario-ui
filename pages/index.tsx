@@ -53,7 +53,7 @@ export default function Home() {
               </PlayerButton>
             </>
           ) : null}
-          {!(giftsList && localization) && isPlayed ? (
+          {!giftsList && !localization && isPlayed ? (
             <MainText left={giftsList || localization ? '-1100px' : '64px'}>
               <h3>É aniversário da</h3>
               <h1>Violetta!</h1>
