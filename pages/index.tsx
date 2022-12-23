@@ -89,7 +89,7 @@ export default function Home() {
                 <ButtonPrimary
                   backgroundColor="#c52a93"
                   onClick={() => {
-                    window.location = 'geo:40.765819,-73.975866' as any;
+                    window.location = 'geo:-22.5707054,-47.4207229' as any;
                   }}
                 >
                   Abrir GPS
