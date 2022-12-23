@@ -136,7 +136,7 @@ export const MashaImage = styled.figure.attrs((props: { open: boolean }) => prop
 
   @media (max-width: 600px) {
     width: 65%;
-    bottom: -16%;
+    bottom: -20%;
     left: 0px;
     right: 0px;
     margin: auto;
