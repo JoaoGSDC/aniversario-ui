@@ -71,7 +71,7 @@ export const MainText = styled.div.attrs((props: { left: string }) => props)`
     }
   }
 
-  @media (max-height: 700px) {
+  @media (max-height: 800px) {
     top: 24px;
   }
 `;
@@ -261,7 +261,6 @@ export const PlayerButton = styled.button`
   font-size: 100px;
   border: none;
   transition: 0.2s;
-  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
